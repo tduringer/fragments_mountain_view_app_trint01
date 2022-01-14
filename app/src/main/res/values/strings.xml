@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">fragments_mountain_view_app_trint01</string>
+    <string name="welcome_to_mountain_lonely_mountain">Welcome to Lonely Mountain App</string>
+    <string name="create_account">Create Account</string>
+    <string name="ask_name">What\'s Your Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="next">Next</string>
+    <string name="email">Email</string>
+    <string name="askEmail">What\'s your email</string>
+    <string name="askPassword">Set a password</string>
+    <string name="password">Password</string>
+    <string name="well_done">Well Done!</string>
+    <string name="signup_complete">Sign Up Complete!</string>
+</resources>

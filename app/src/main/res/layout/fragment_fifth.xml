@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/wellDoneTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/well_done"
+        android:textAppearance="?textAppearanceHeadline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/signupCompleteTv"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/signupCompleteTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_complete"
+        android:textAppearance="?textAppearanceHeadline3"
+        app:layout_constraintTop_toBottomOf="@+id/wellDoneTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/firstNameOutputTv"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/firstNameOutputTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceHeadline2"
+        app:layout_constraintTop_toBottomOf="@id/signupCompleteTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lastNameOutputTv"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="First Name Output"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lastNameOutputTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceHeadline2"
+        app:layout_constraintTop_toBottomOf="@id/firstNameOutputTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/emailOutputTv"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Last Name Output"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/emailOutputTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceHeadline2"
+        app:layout_constraintTop_toBottomOf="@id/lastNameOutputTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/passwordOutputTv"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Email Output"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/passwordOutputTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceHeadline2"
+        app:layout_constraintTop_toBottomOf="@id/emailOutputTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Password Output"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
